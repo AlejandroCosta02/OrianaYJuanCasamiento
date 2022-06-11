@@ -1,15 +1,3 @@
-/*!
- * Project : simply-countdown
- * File : simplyCountdown
- * Date : 27/06/2015
- * License : MIT
- * Version : 1.3.2
- * Author : Vincent Loy <vincent.loy1@gmail.com>
- * Contributors : 
- *  - Justin Beasley <JustinB@harvest.org>
- *  - Nathan Smith <NathanS@harvest.org>
- */
-/*global window, document*/
 (function(exports) {
     'use strict';
 
@@ -116,8 +104,8 @@
     simplyCountdown = function(elt, args) {
         var parameters = extend({
                 year: 2022,
-                month: 11,
-                day: 5,
+                month: 10,
+                day: 6,
                 hours: 0,
                 minutes: 0,
                 seconds: 0,
@@ -156,7 +144,7 @@
         targetTmpDate = new Date(
             parameters.year,
             parameters.month,
-            parameters.day + 52,
+            parameters.day + 50,
             parameters.hours + 9,
             parameters.minutes,
             parameters.seconds
