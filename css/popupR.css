@@ -1,0 +1,78 @@
+.tituloPopup {
+    font-size: 45px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #873e23;
+    font-family: "Sacramento", Arial, serif;
+}
+
+.popupR .cubreTodoR {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: none;
+}
+
+.popupR .contenidoR {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 280px;
+    z-index: 2;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.popupR .cerrarBtnR {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popupR.active .cubreTodoR {
+    display: block;
+}
+
+.popupR.active .contenidoR {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@media screen and (max-width: 768px) {
+    .popupR .contenidoR {
+        width: 400px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tituloPopup {
+        font-size: 35px;
+    }
+    .popupR .contenidoR {
+        width: 350px;
+        height: 300px;
+    }
+    .mapa {
+        width: 348px;
+        height: 298px;
+    }
+}
